@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syed Abdul Moueed Farrukh | Product Manager</title>
+  <meta name="description" content="Interactive product manager portfolio and online CV.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar" id="top">
+    <div class="shell topbar-inner">
+      <a class="logo" href="#top">Syed Abdul Moueed Farrukh</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#projects">Work Grid</a></li>
+          <li><a href="#roadmaps">Roadmaps</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero reveal" id="overview">
+      <div class="hero-left">
+        <p class="kicker">Product Management Portfolio</p>
+        <h1>Hi, I am Moueed.</h1>
+        <p class="lead">
+          Product manager focused on building high-impact products through strategy, roadmaps, analytics, and growth loops.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Explore Work</a>
+          <a class="btn btn-ghost" href="#roadmaps">Open Roadmaps</a>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrap hero-visual">
+        <svg class="flow-diagram" viewBox="0 0 200 200" aria-hidden="true">
+          <path class="flow-path" d="M100 68 L70 98 M100 68 L130 98 M70 110 L95 148 M130 110 L105 148" stroke-width="2" fill="none"/>
+          <circle class="flow-node flow-node-1" cx="100" cy="50" r="18"/>
+          <circle class="flow-node flow-node-2" cx="60" cy="110" r="14"/>
+          <circle class="flow-node flow-node-3" cx="140" cy="110" r="14"/>
+          <circle class="flow-node flow-node-4" cx="100" cy="160" r="12"/>
+        </svg>
+        <p class="flow-tagline">Strategy · Execution · Growth</p>
+      </div>
+
+      <aside class="hero-right">
+        <p class="kicker">Expert On</p>
+        <h2>Based in Pakistan, I build product systems that scale.</h2>
+        <p>
+          From discovery to execution, I align product direction with business impact and user outcomes.
+        </p>
+        <div class="hero-meta">
+          <p>Portfolio by Moueed Farrukh</p>
+          <a href="#contact">Let's connect</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="industry-band reveal" id="industries">
+      <p class="kicker">Industries Worked In</p>
+      <div>
+        <span>FinTech</span>
+        <span>Personal Finance</span>
+        <span>SaaS Tools</span>
+        <span>Digital Products</span>
+        <span>Consumer Platforms</span>
+      </div>
+    </section>
+
+    <section class="project-lab reveal" id="projects">
+      <div class="section-head">
+        <p class="kicker">Work Grid</p>
+        <h2>Interactive project showcase</h2>
+      </div>
+
+      <div class="slider-controls">
+        <button class="slider-btn" id="projectPrev" aria-label="Previous project">←</button>
+        <div class="slider-dots" id="projectDots" aria-label="Project position">
+          <button class="dot active" data-slide="0" aria-label="Go to GoalGuard"></button>
+          <button class="dot" data-slide="1" aria-label="Go to Rider Fraud Dashboard"></button>
+          <button class="dot" data-slide="2" aria-label="Go to Nyxa UI Design"></button>
+        </div>
+        <button class="slider-btn" id="projectNext" aria-label="Next project">→</button>
+      </div>
+
+      <div class="project-stage">
+        <div class="project-track" id="projectTrack">
+          <article class="project-panel">
+            <div class="preview-wrap">
+              <iframe
+                class="preview-frame"
+                src="https://moeedfarrukh.github.io/GoalGuard/"
+                title="GoalGuard preview"
+                loading="lazy"
+                scrolling="no"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+            <div class="project-copy">
+              <h3>GoalGuard</h3>
+              <p>AI-powered smart savings mentor that combines goal tracking, safe-spend guidance, and conversational decision support.</p>
+              <ul>
+                <li>Product concept from problem framing to feature architecture</li>
+                <li>Funnel design: goals -> guidance -> decision point</li>
+                <li>Growth-oriented UX with recurring checkpoints</li>
+              </ul>
+              <div class="row-actions">
+                <a class="btn btn-primary" href="https://moeedfarrukh.github.io/GoalGuard/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a class="text-link" href="https://github.com/moeedfarrukh/GoalGuard" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-panel">
+            <div class="preview-wrap">
+              <iframe
+                class="preview-frame"
+                src="https://moeedfarrukh.github.io/rider-fraud-alert-dashboard/"
+                title="Rider Fraud Dashboard preview"
+                loading="lazy"
+                scrolling="no"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+            <div class="project-copy">
+              <h3>Rider Fraud Alert Dashboard</h3>
+              <p>MVP product-ops dashboard for rider fraud triage. Prioritizes alerts by blended risk and financial impact with analyst workflow for review and action.</p>
+              <ul>
+                <li>Python + Flask backend with SQLite and server-rendered templates</li>
+                <li>Priority scoring: risk_score × estimated_loss</li>
+                <li>Analyst actions: allow, monitor, temporary_block, escalate</li>
+              </ul>
+              <div class="row-actions">
+                <a class="btn btn-primary" href="https://moeedfarrukh.github.io/rider-fraud-alert-dashboard/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a class="text-link" href="https://github.com/moeedfarrukh/rider-fraud-alert-dashboard" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-panel">
+            <div class="preview-wrap">
+              <iframe
+                class="preview-frame"
+                src="https://moeedfarrukh.github.io/Nyxa-UI-Design/"
+                title="Nyxa preview"
+                loading="lazy"
+                scrolling="no"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+            <div class="project-copy">
+              <h3>Nyxa UI Design</h3>
+              <p>Partner intelligence experience for surfacing cancellation reasons, operational signals, and network-level actions.</p>
+              <ul>
+                <li>Conversation-first interaction for fast exploration</li>
+                <li>Operational dashboard readability and hierarchy</li>
+                <li>Decision-focused product UX for support teams</li>
+              </ul>
+              <div class="row-actions">
+                <a class="btn btn-primary" href="https://moeedfarrukh.github.io/Nyxa-UI-Design/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a class="text-link" href="https://github.com/moeedfarrukh/Nyxa-UI-Design" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="roadmap-board reveal" id="roadmaps">
+      <div class="section-head">
+        <p class="kicker">Roadmaps</p>
+        <h2>What is planned, evolving, and next</h2>
+      </div>
+      <div class="board-grid">
+        <article>
+          <span>Strategic</span>
+          <h3>Product Management Roadmap</h3>
+          <a href="https://github.com/moeedfarrukh" target="_blank" rel="noopener noreferrer">Open on GitHub</a>
+        </article>
+        <article>
+          <span>Project</span>
+          <h3>GoalGuard Product Roadmap</h3>
+          <a href="https://github.com/moeedfarrukh/GoalGuard/tree/main/docs" target="_blank" rel="noopener noreferrer">Open on GitHub</a>
+        </article>
+        <article>
+          <span>Project</span>
+          <h3>Nyxa Product Roadmap</h3>
+          <a href="https://github.com/moeedfarrukh/Nyxa-UI-Design" target="_blank" rel="noopener noreferrer">Open on GitHub</a>
+        </article>
+        <article>
+          <span>Growth</span>
+          <h3>Experiments Roadmap</h3>
+          <a href="https://github.com/moeedfarrukh" target="_blank" rel="noopener noreferrer">Open on GitHub</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills-board reveal" id="skills">
+      <div class="section-head">
+        <p class="kicker">Skills</p>
+        <h2>PM toolkit across strategy, execution, analytics, and platforms</h2>
+      </div>
+      <div class="skills-grid">
+        <article>
+          <h3>Strategy & Discovery</h3>
+          <ul class="skills-list compact">
+            <li>Problem Framing</li>
+            <li>Product Vision</li>
+            <li>User Research</li>
+            <li>Market Validation</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Execution</h3>
+          <ul class="skills-list compact">
+            <li>Roadmapping</li>
+            <li>PRD Writing</li>
+            <li>Stakeholder Alignment</li>
+            <li>Agile Delivery</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Analytics & Growth</h3>
+          <ul class="skills-list compact">
+            <li>Funnel Analysis</li>
+            <li>A/B Testing</li>
+            <li>Cohort Tracking</li>
+            <li>Growth Loops</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Data & BI Tools</h3>
+          <ul class="skills-list compact">
+            <li>SQL</li>
+            <li>Excel</li>
+            <li>Python</li>
+            <li>Tableau</li>
+            <li>Power BI</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Product Ops Tools</h3>
+          <ul class="skills-list compact">
+            <li>Jira</li>
+            <li>Confluence</li>
+            <li>Asana</li>
+            <li>Monday.com</li>
+            <li>Trello</li>
+            <li>Amplitude</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Enterprise Platforms</h3>
+          <ul class="skills-list compact">
+            <li>Oracle</li>
+            <li>Dynamics 365</li>
+            <li>Salesforce</li>
+            <li>Zoho</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Methods & Delivery Models</h3>
+          <ul class="skills-list compact">
+            <li>SDLC</li>
+            <li>RFP Writing</li>
+            <li>Agile</li>
+            <li>Scrum</li>
+            <li>Waterfall</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="shell footer-inner">
+      <div>
+        <h2>Open to product management opportunities and collaborations.</h2>
+      </div>
+      <div class="footer-links">
+        <a class="icon-link" href="mailto:moueedfarrukh@gmail.com" aria-label="Email">✉</a>
+        <a class="icon-link" href="https://github.com/moeedfarrukh" target="_blank" rel="noopener noreferrer" aria-label="GitHub">⌘</a>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> Syed Abdul Moueed Farrukh.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
